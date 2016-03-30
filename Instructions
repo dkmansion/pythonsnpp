@@ -1,12 +1,11 @@
 
 
-Obtain Neale Pickett's snpplib.py from http://woozle.org/neale/src/python/
-snpplib.py (21k)
-SNPP client class for Python
-
+Obtain Neale Pickett's snpplib.py from http://woozle.org/neale/src/python/ (It's not on on his github repo).
+snpplib.py (21k)  SNPP client class for Python
+Thanks to Neale for the work converting snpplib from smtplib.
 ---
 
-Edit snppsend.py 
+Edit pythonsnpp.py 
 Edit strings on line 12, 13, 14, 18, 19, 21, 22 (only if needed, You can delete 21 and 22 if only sending to one user at a time)
 Duplicate lines 18 & 19 for each recipient you are messaging in a single send session, otherwise use separate SNPP sessions and message one at a time using line 18, 18 and 23 (delete 21 & 22)
 
