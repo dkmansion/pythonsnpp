@@ -1,10 +1,19 @@
 
 
-Obtain Neale
+Obtain Neale Pickett's snpplib.py from http://woozle.org/neale/src/python/
 snpplib.py (21k)
 SNPP client class for Python
-http://woozle.org/neale/src/python/
 
 ---
 
-Edit 
+Edit snppsend.py 
+Edit strings on line 12, 13, 14, 18, 19, 21, 22 (only if needed, You can delete 21 and 22 if only sending to one user at a time)
+Duplicate lines 18 & 19 for each recipient you are messaging in a single send session, otherwise use separate SNPP sessions and message one at a time using line 18, 18 and 23 (delete 21 & 22)
+
+-----
+
+Note: you may need to edit snpplib.py at the end of the file to meet your requirements.  Maybe having a separate snpplib file for each vendor you are delivering messages to.  ie; snpplib_AMS.py, or snpplib_SPOK.py to ensure the localhost string is directed properly.
+
+I used this internally to an SNPP server on a private network and made heavy modifications to the end of the snpplib.py file obtained from Neale Pickett's site.
+
+Goodluck.
